@@ -15,4 +15,4 @@ diff -urN ripperX-2.6.1.orig/ripperX.desktop ripperX-2.6.1/ripperX.desktop
  MultipleArgs=false
  Type=Application
 +Encoding=UTF-8
-+Categories=GTK;Audio
++Categories=GTK;Audio;
