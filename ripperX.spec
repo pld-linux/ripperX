@@ -57,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/ripperX_plugin-xingmp3enc
 %attr(755,root,root) %{_bindir}/ripperX_plugin-l3enc
 %attr(755,root,root) %{_bindir}/ripperX_plugin-mp3enc
-%{_datadir}/pixmaps/ripperX-icon.xpm
+%{_pixmapsdir}/ripperX-icon.xpm
 %{_applnkdir}/Multimedia/ripperX.desktop
