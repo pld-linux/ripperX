@@ -10,8 +10,6 @@ Source0:	%{name}-%{version}.tar.gz
 URL:		http://sourceforge.net/projects/ripperx/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 GTK program to rip CD audio and encode mp3s. Supports parallel
