@@ -37,7 +37,6 @@ install -d $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install -d $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
 %{__make} prefix=$RPM_BUILD_ROOT%{_prefix} install
-strip $RPM_BUILD_ROOT%{_bindir}/* ||:
 cp src/xpms/ripperX-icon.xpm $RPM_BUILD_ROOT%{_datadir}/pixmaps
 cp ripperX.desktop $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
 
