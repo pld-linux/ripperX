@@ -14,13 +14,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GTK+ program to rip CD audio and encode MP3s. Supports parallel
 ripping/encoding, has plugins for cdparanoia, BladeEnc, Lame, GoGo,
-FHG (l3enc and mp3enc), XingMp3enc, 8hz-mp3, and the ISO encoder. Also
+FHG (l3enc and mp3enc), XingMp3enc, 8hz-MP3, and the ISO encoder. Also
 has support for CDDB and ID3 tags.
 
 %description -l pl
 Program GTK+ do ripowania p³yt CD-Audio i kodowania MP3. Obs³uguje
 równoleg³e ripowanie/kodowanie, ma wtyczki dla cdparanoia, BladeEnc,
-Lame, GoGo, FHG (l3enc i mp3enc), XingMp3enc, 8hz-mp3 oraz koder ISO.
+Lame, GoGo, FHG (l3enc i mp3enc), XingMp3enc, 8hz-MP3 oraz koder ISO.
 Ma tak¿e obs³ugê CDDB i tagów ID3.
 
 %prep
