@@ -1,12 +1,12 @@
 Summary:	GTK program to rip CD audio and encode mp3s
 Summary(pl):	Program pod GTK do ripowania p³yt CD i kodowania mp3
 Name:		ripperX
-Version:	2.3
+Version:	2.5
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Requires:	cdparanoia
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://prdownloads.sourceforge.net/ripperx/%{name}-%{version}.tar.gz
 URL:		http://sourceforge.net/projects/ripperx/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/ripperX_plugin-8hz-mp3
 %attr(755,root,root) %{_bindir}/ripperX_plugin-lame
 %attr(755,root,root) %{_bindir}/ripperX_plugin-gogo
+%attr(755,root,root) %{_bindir}/ripperX_plugin-oggenc
 %attr(755,root,root) %{_bindir}/ripperX_plugin-bladeenc
 %attr(755,root,root) %{_bindir}/ripperX_plugin-xingmp3enc
 %attr(755,root,root) %{_bindir}/ripperX_plugin-l3enc
