@@ -3,14 +3,14 @@ Summary(pl):	Program pod GTK+ do ripowania p³yt CD i kodowania MP3, Ogg, FLAC
 Name:		ripperX
 Version:	2.6.4
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications
-Requires:	cdparanoia-III
 Source0:	http://dl.sourceforge.net/ripperx/%{name}-%{version}.tar.gz
 # Source0-md5:	cb854193305343597abd3cfc97a2a72e
 Patch0:		%{name}-desktop.patch
+URL:		http://ripperx.sourceforge.net/
 BuildRequires:	gtk+-devel >= 1.1.13
-URL:		http://sourceforge.net/projects/ripperx/
+Requires:	cdparanoia-III
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,13 +36,14 @@ oraz koder ISO. Ma tak¿e obs³ugê CDDB i znaczników ID3.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir},%{_mandir}/man1}
 
 %{__make} install \
 	prefix=$RPM_BUILD_ROOT%{_prefix}
 
 install src/xpms/ripperX-icon.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 install ripperX.desktop $RPM_BUILD_ROOT%{_desktopdir}
+install ripperX.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -65,3 +66,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/ripperX_plugin-toolame
 %{_pixmapsdir}/ripperX-icon.xpm
 %{_desktopdir}/ripperX.desktop
+%{_mandir}/man1/ripperX.1.*
