@@ -33,7 +33,7 @@ make
 mkdir -p $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{prefix}/share/pixmaps
 mkdir -p $RPM_BUILD_ROOT%{prefix}/share/gnome/apps/Multimedia
-make prefix=$RPM_BUILD_ROOT%{prefix} install
+%{__make} prefix=$RPM_BUILD_ROOT%{prefix} install
 strip $RPM_BUILD_ROOT%{prefix}/bin/* ||:
 cp src/xpms/ripperX-icon.xpm $RPM_BUILD_ROOT%{prefix}/share/pixmaps
 cp ripperX.desktop $RPM_BUILD_ROOT%{prefix}/share/gnome/apps/Multimedia
