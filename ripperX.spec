@@ -1,13 +1,15 @@
 Summary:	GTK+ program to rip CD audio and encode MP3s
 Summary(pl):	Program pod GTK+ do ripowania p³yt CD i kodowania MP3
 Name:		ripperX
-Version:	2.6.1
-Release:	2
+Version:	2.6.4
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Requires:	cdparanoia-III
 Source0:	http://dl.sourceforge.net/ripperx/%{name}-%{version}.tar.gz
-# Source0-md5:	8af5b6fdb429a171ab8fdbc36211d2fa
+# Source0-md5:	cb854193305343597abd3cfc97a2a72e
+Patch0:		%{name}-desktop.patch
+BuildRequires:	gtk+-devel >= 1.1.13
 URL:		http://sourceforge.net/projects/ripperx/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,6 +27,7 @@ Ma tak¿e obs³ugê CDDB i tagów ID3.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 ./configure --prefix=%{_prefix}
@@ -32,13 +35,11 @@ Ma tak¿e obs³ugê CDDB i tagów ID3.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/pixmaps
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
 %{__make} prefix=$RPM_BUILD_ROOT%{_prefix} install
-install src/xpms/ripperX-icon.xpm $RPM_BUILD_ROOT%{_datadir}/pixmaps
-install ripperX.desktop $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
+install src/xpms/ripperX-icon.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
+install ripperX.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -58,5 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/ripperX_plugin-l3enc
 %attr(755,root,root) %{_bindir}/ripperX_plugin-mp3enc
 %attr(755,root,root) %{_bindir}/ripperX_plugin-flac
+%attr(755,root,root) %{_bindir}/ripperX_plugin-toolame
 %{_pixmapsdir}/ripperX-icon.xpm
-%{_applnkdir}/Multimedia/ripperX.desktop
+%{_desktopdir}/ripperX.desktop
