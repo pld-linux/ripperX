@@ -5,11 +5,6 @@ Version:	2.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(es):	X11/Aplicaciones
-Group(pl):	X11/Aplikacje
-Group(pt_BR):	X11/Aplicações
-Group(pt):	X11/Aplicações
 Requires:	cdparanoia
 Source0:	http://www.digitallabyrinth.com/linux/ripperX/%{name}-%{version}.tar.gz
 URL:		http://www.digitallabyrinth.com/linux/ripperX/index.html
