@@ -6,10 +6,9 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Requires:	cdparanoia
-Source0:	http://prdownloads.sourceforge.net/ripperx/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/ripperx/%{name}-%{version}.tar.gz
 URL:		http://sourceforge.net/projects/ripperx/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 GTK program to rip CD audio and encode mp3s. Supports parallel
