@@ -27,7 +27,7 @@ ISO encoder.  Also has support for CDDB and ID3 tags.
 
 %build
 ./configure --prefix=%{prefix}
-make
+%{__make}
 
 %install
 mkdir -p $RPM_BUILD_ROOT
