@@ -23,21 +23,24 @@ ISO encoder. Also has support for CDDB and ID3 tags.
 Program GTK+ do ripowania p³yt CD-Audio i kodowania MP3, Ogg, Flac.
 Obs³uguje równoleg³e ripowanie/kodowanie, ma wtyczki dla cdparanoia,
 BladeEnc, Lame, GoGo, FHG (l3enc i mp3enc), XingMp3enc, 8hz-MP3
-oraz koder ISO. Ma tak¿e obs³ugê CDDB i tagów ID3.
+oraz koder ISO. Ma tak¿e obs³ugê CDDB i znaczników ID3.
 
 %prep
 %setup -q
 %patch0 -p1
 
 %build
-./configure --prefix=%{_prefix}
+./configure \
+	--prefix=%{_prefix}
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
-%{__make} prefix=$RPM_BUILD_ROOT%{_prefix} install
+%{__make} install \
+	prefix=$RPM_BUILD_ROOT%{_prefix}
+
 install src/xpms/ripperX-icon.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 install ripperX.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
