@@ -42,14 +42,12 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
 install src/xpms/ripperX-icon.xpm $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install ripperX.desktop $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
 
-gzip -9nf FAQ README README.plugin README.plugin_spec_v0.1  TODO CHANGES BUGS
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {FAQ,README,README.plugin,README.plugin_spec_v0.1,TODO,CHANGES,BUGS}.gz
+%doc FAQ README README.plugin README.plugin_spec_v0.1 TODO CHANGES BUGS
 %attr(755,root,root) %{_bindir}/ripperX
 %attr(755,root,root) %{_bindir}/ripperX_plugin-cdparanoia
 %attr(755,root,root) %{_bindir}/ripperX_plugin-encode
