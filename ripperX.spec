@@ -13,7 +13,7 @@ Requires: cdparanoia
 Source: http://www.digitallabyrinth.com/linux/ripperX/ripperX-%{ver}.tar.gz
 URL: http://www.digitallabyrinth.com/linux/ripperX/index.html
 Packager: Scott Sams <sbsams@digitallabyrinth.com>
-BuildRoot: /var/tmp/ripperX-%{PACKAGE_VERSION}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Docdir: %{prefix}/doc
 
 %description
