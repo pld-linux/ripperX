@@ -1,13 +1,13 @@
 Summary:	GTK program to rip CD audio and encode mp3s
 Summary(pl):	Program pod GTK do ripowania p³yt CD i kodowania mp3
 Name:		ripperX
-Version:	2.0
+Version:	2.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Requires:	cdparanoia
-Source0:	http://www.digitallabyrinth.com/linux/ripperX/%{name}-%{version}.tar.gz
-URL:		http://www.digitallabyrinth.com/linux/ripperX/index.html
+Source0:	%{name}-%{version}.tar.gz
+URL:		http://sourceforge.net/projects/ripperx/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -42,14 +42,14 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
 install src/xpms/ripperX-icon.xpm $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install ripperX.desktop $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
 
-gzip -9nf FAQ README README.plugin README.plugin_spec_v0.1 README_plugin_tester TODO CHANGES BUGS
+gzip -9nf FAQ README README.plugin README.plugin_spec_v0.1  TODO CHANGES BUGS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {FAQ,README,README.plugin,README.plugin_spec_v0.1,README.plugin_tester,TODO,CHANGES,BUGS}.gz
+%doc {FAQ,README,README.plugin,README.plugin_spec_v0.1,TODO,CHANGES,BUGS}.gz
 %attr(755,root,root) %{_bindir}/ripperX
 %attr(755,root,root) %{_bindir}/ripperX_plugin-cdparanoia
 %attr(755,root,root) %{_bindir}/ripperX_plugin-encode
