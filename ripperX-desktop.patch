@@ -1,0 +1,18 @@
+diff -urN ripperX-2.6.1.orig/ripperX.desktop ripperX-2.6.1/ripperX.desktop
+--- ripperX-2.6.1.orig/ripperX.desktop	2004-11-29 10:49:42.000000000 +0100
++++ ripperX-2.6.1/ripperX.desktop	2004-11-29 11:01:04.898289280 +0100
+@@ -1,9 +1,11 @@
+-
+ [Desktop Entry]
+ Name=ripperX
+-Comment=rip CDs and encode to mp3, ogg, or flac 
++Comment=Rip CDs and encode to MP3, Ogg, or FLAC 
++Comment[pl]=Ripowanie CD i kodowanie MP3, Ogg lub FLAC
+ Exec=ripperX 
+-Icon=/usr/share/pixmaps/ripperX-icon.xpm
++Icon=ripperX-icon.xpm
+ Terminal=false
+ MultipleArgs=false
+ Type=Application
++Encoding=UTF-8
++Categories=GTK;Audio
