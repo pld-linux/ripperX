@@ -30,8 +30,8 @@ oraz koder ISO. Ma tak¿e obs³ugê CDDB i znaczników ID3.
 %patch0 -p1
 
 %build
-./configure \
-	--prefix=%{_prefix}
+%configure2_13
+
 %{__make}
 
 %install
@@ -66,4 +66,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/ripperX_plugin-toolame
 %{_pixmapsdir}/ripperX-icon.xpm
 %{_desktopdir}/ripperX.desktop
-%{_mandir}/man1/ripperX.1.*
+%{_mandir}/man1/ripperX.1*
