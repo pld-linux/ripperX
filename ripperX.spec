@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications
 Requires:	cdparanoia
 Source0:	http://dl.sourceforge.net/ripperx/%{name}-%{version}.tar.gz
+# Source0-md5:	c8c04c076b358b229103d6bfb305219b
 URL:		http://sourceforge.net/projects/ripperx/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
