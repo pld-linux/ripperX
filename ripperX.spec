@@ -1,5 +1,5 @@
 Summary:	GTK+ program to rip CD audio and encode MP3s, Ogg, FLAC
-Summary(pl.UTF-8):   Program pod GTK+ do ripowania płyt CD i kodowania MP3, Ogg, FLAC
+Summary(pl.UTF-8):	Program pod GTK+ do ripowania płyt CD i kodowania MP3, Ogg, FLAC
 Name:		ripperX
 Version:	2.7.0
 Release:	1
