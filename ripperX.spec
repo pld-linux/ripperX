@@ -1,5 +1,5 @@
 Summary:	GTK+ program to rip CD audio and encode MP3s, Ogg, FLAC
-Summary(pl):	Program pod GTK+ do ripowania p≥yt CD i kodowania MP3, Ogg, FLAC
+Summary(pl.UTF-8):   Program pod GTK+ do ripowania p≈Çyt CD i kodowania MP3, Ogg, FLAC
 Name:		ripperX
 Version:	2.7.0
 Release:	1
@@ -20,11 +20,11 @@ parallel ripping/encoding, has plugins for cdparanoia, BladeEnc,
 Lame, GoGo, FHG (l3enc and mp3enc), XingMp3enc, 8hz-MP3, and the
 ISO encoder. Also has support for CDDB and ID3 tags.
 
-%description -l pl
-Program GTK+ do ripowania p≥yt CD-Audio i kodowania MP3, Ogg, Flac.
-Obs≥uguje rÛwnoleg≥e ripowanie/kodowanie, ma wtyczki dla cdparanoia,
+%description -l pl.UTF-8
+Program GTK+ do ripowania p≈Çyt CD-Audio i kodowania MP3, Ogg, Flac.
+Obs≈Çuguje r√≥wnoleg≈Çe ripowanie/kodowanie, ma wtyczki dla cdparanoia,
 BladeEnc, Lame, GoGo, FHG (l3enc i mp3enc), XingMp3enc, 8hz-MP3
-oraz koder ISO. Ma takøe obs≥ugÍ CDDB i znacznikÛw ID3.
+oraz koder ISO. Ma tak≈ºe obs≈Çugƒô CDDB i znacznik√≥w ID3.
 
 %prep
 %setup -q
