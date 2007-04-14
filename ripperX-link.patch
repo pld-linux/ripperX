@@ -15,7 +15,7 @@
  
  ripperX: $(OFILES)
 -	$(CC) $(LDFLAGS) $(OFILES) -o ripperX
-+	$(CC) $(LDFLAGS) $(OFILES) -o ripperX $(LDADD)
++	$(CC) $(CFLAGS) $(LDFLAGS) $(OFILES) -o ripperX $(LDADD)
  
  .c.o:
  	$(CC) $(CFLAGS) -c $<
