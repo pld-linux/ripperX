@@ -9,7 +9,7 @@ Source0:	http://dl.sourceforge.net/ripperx/%{name}-%{version}.tar.gz
 # Source0-md5:	bf69f2cbfb52551ac18e713e9894f306
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-link.patch
-URL:		http://ripperx.sourceforge.net/
+URL:		http://sourceforge.net/projects/ripperx/
 BuildRequires:	gtk+-devel >= 1.1.13
 BuildRequires:	id3lib-devel
 Requires:	cdparanoia-III
